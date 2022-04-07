@@ -1,0 +1,55 @@
+
+#Navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    height: 65px;
+}
+input{
+   background-color:rgb(175,175,175);
+    border: none;
+    width: 86%;
+    height:45px;
+ border: none;
+
+}
+button{
+   margin-left: -5px;
+   width: 70px;
+   height: 46px;
+    
+
+}
+#midilediv{
+    width: 50%;
+    
+    
+}
+#logo{
+    width: 20%;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+#points{
+  
+   width: 30%;
+  
+}
+#points>a>img{
+  margin-left: 10%;
+  margin-top:10px;
+  background-color:white;
+  border-radius: 100%;
+  width: 32px;
+}
+#points>a>img:hover{
+    background-color: rgba(168, 158, 158, 0.521);
+}
+#youtube{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px;
+ }

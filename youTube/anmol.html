@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<style>
+
+    
+#container{
+   
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
+.ham{
+    margin-top: 2px;
+    background-color: white;
+outline: none;
+border: none;
+margin-bottom: 20px;
+    
+}
+
+.ham>div{
+width: 18px;
+height: 0.1px;
+border: none;
+background-color: black;
+
+/* border: solid 0.1px; */
+margin-top: 6px;
+}
+#utubelogo{
+width: 140px;
+
+}
+#utubelogo>img{
+    width: 100%;
+    height: 35px;
+}
+#head{
+    display: flex;
+    
+}
+#head>div:hover{
+background-color: whitesmoke;
+}
+#searchbox{
+    
+    width: 42%;
+margin-left: 11%;
+
+}
+#search{
+    width: 98.9%;
+    height: 35px;
+   outline-width: 0.1px;
+}
+#myimg{
+    border-radius: 50%;
+    margin-top: 4px;
+}
+#slidebar{
+    width: 20%;
+   
+  
+}
+
+#videos{
+  
+   width: 88%;
+    background-color:whitesmoke;
+    
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18%;
+    column-gap: 6.5%;
+   padding-top: 60px;
+   
+    
+}
+#vidandside{
+    display: flex;
+    padding-top: 60px;
+}
+.text{
+    font-size: 8px;
+    padding-left: 10px;
+    color: rgb(253, 245, 245);
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#slidebar>div{
+    display: flex;
+    margin-top: 8px;
+   
+    
+}
+#slidebar>div:hover{
+    background-color: whitesmoke;
+    
+}
+.bagalmai{
+    margin-left: 13%;
+    
+    padding-top: 12px;
+    font-size: 14px;
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.symbol{
+padding-left: 10px;
+}
+.titlesearch{
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+margin-left: -100px;
+font-size: 18px;
+padding-top: 40px;
+
+
+}
+#vidbox{
+    display: grid;
+    grid-template-columns: 48% 40%;
+ 
+    background-color: whitesmoke;
+    width: 1220px;
+}
+a{
+    text-decoration: none;
+    color: black;
+  
+   font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    </style>
+<body>
+    <div id="container">
+    <div id="head">
+<button onclick="short()" class="ham">
+ <div></div>
+ <div></div>
+ <div></div>
+ <!-- ham end -->
+</button  >
+  <div id="utubelogo"><img src="https://www.logo.wine/a/logo/YouTube/YouTube-Logo.wine.svg"></div>
+
+  <div id="searchbox"><input type="text" placeholder="SEARCH" id="search"> 
+     
+</div>
+<button style="width: 55px;" onclick="showvid()">
+<span class="material-icons  " style="font-size: 30px;  width: 100% ;text-align: center;  "
+> search</span></button>
+
+
+
+
+    <span class="material-icons" style="border: 1px solid;font-size: 20px;margin-top: 1px; background-color:whitesmoke; width: 30px ;height:30px;text-align: center;border-radius: 50%; margin-left: 8px; padding-top: 5px; ">
+        mic
+        </span>
+        <span class="material-icons" style="margin-left: 10%; padding: 5px;">
+            videocam
+            </span>
+        <span class="material-icons" style="margin-left: 2%; padding: 5px;">
+            apps
+            </span>
+           
+                <span class="material-icons" style="margin-left: 2%; padding: 5px;">
+                    notifications
+                    </span>
+                    <div style="width: 40px; height: 40px; margin-left:1% ;border-radius: 50%; ">
+                        <!-- <img src="anmol.jpg" width="100%" id="myimg"> -->
+                       <a href="login.html">Login</a>
+                    </div>
+                    
+  <!-- head end -->
+</div>
+<!-- container end -->
+
+
+</div>
+<div id="vidandside">
+<div id="slidebar">
+    <!-- home -->
+    <div> <span class="material-icons" style="font-size: 30px; padding-left: 8px; "id="home">
+        home
+        </span>
+        <div class="bagalmai">Home</div>
+    </div>
+    <div class="text">Home</div>
+   <!-- explore -->
+   <div>
+        <span class="material-icons"style="font-size: 30px ; padding-left: 8px;">
+            explore
+        </span>
+        <div class="bagalmai">Explore</div>
+    </div>
+        <div class="text">Explore</div>
+        <!-- subscription -->
+        <div> <span class="material-icons"style="font-size: 30px ; padding-left: 8px;">
+            subscriptions
+        </span>
+        <div class="bagalmai">Subscription</div>
+    </div>
+        <div class="text">Subscription</div>
+        <hr>
+        <!-- video library -->
+<div><span class="material-icons"style="font-size: 30px ; padding-left: 8px;">
+    video_library
+    </span>
+    <div class="bagalmai">Library</div>
+</div>
+    <div class="text">Library</div>
+    <!-- history -->
+       <div><span class="material-icons" style="font-size: 30px ; padding-left: 8px;">
+        history
+        </span>
+        <div class="bagalmai">History</div></div>
+        <div class="text">History</div>
+<hr style="color: rgb(54, 51, 51);">
+</div>
+<div id="videos"></div>
+</div>
+</body>
+</html>
+
+    <script>
+
+        var vidbox=document.getElementById("videos")
+        async function showvid(){
+            var search=document.getElementById("search").value;
+            let res=  await fetch(` https://youtube.googleapis.com/youtube/v3/search?channelType=any&maxResults=20&q=${search}&key=AIzaSyB6D4ulj8vEPbNnXUhPESyJrd1JfQQzQSQ&part=snippet`)
+            let data= await res.json();
+            let vids=data.items;
+            console.log(vids)
+            appendvid(vids)
+        }
+
+        function appendvid(vids){
+
+            vidbox.innerHTML=null
+           vids.forEach((el)  => {
+            let div=document.createElement("div");
+            videoId=el.id.videoId
+            div.style.marginLeft="20px";
+            div.style.marginTop="30px"
+          
+           var title=document.createElement("div");
+           title.textContent=el.snippet.title+" "+el.snippet.description;
+           console.log(title)
+          
+           title.setAttribute("class","titlesearch")
+            div.innerHTML=`<iframe width="410" height="240" src="https://www.youtube.com/embed/${videoId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            
+            var channelname=document.createElement("p");
+            channelname.textContent=el.snippet.channelTitle
+           
+          vidbox.setAttribute("id","vidbox")
+            vidbox.append(div,title)
+            
+            });
+        }
+        async function homepage(){
+            let res= await fetch(`https://youtube.googleapis.com/youtube/v3/videos?chart=mostPopular&maxResults=20&regionCode=IN&key=AIzaSyB6D4ulj8vEPbNnXUhPESyJrd1JfQQzQSQ&part=snippet `);
+            let data=await res.json();
+            var vids=data.items;
+            console.log(vids)
+            vidbox.innerHTML=null
+           vids.forEach((el)  => {
+            let div=document.createElement("div");
+            div.style.marginLeft="20px"
+             id=el.id;
+             var title=document.createElement("p");
+             title.innerText=el.snippet.title;
+             
+             
+            div.innerHTML=`<iframe width="260" height="180" src="https://www.youtube.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`+title.textContent
+            
+           
+            var channelname=document.createElement("p")
+            vidbox.append(div)
+            });
+            
+        }
+        homepage()
+        var ham=document.getElementsByClassName("ham");
+        console.log(ham)
+        var slidebar=document.getElementById("slidebar")
+            var videos=document.getElementById("videos");
+            
+            var text=document.getElementsByClassName("text");
+           
+            var num=1;
+      function short(){
+       
+         
+          if(num==1){
+            slidebar.style.width="44px";
+            for(let i =0;i<text.length;i++){
+          text[i].style.color="black";
+          text[i].style.paddingBottom="30px";
+          text[2].style.paddingLeft="1px"
+      }
+            num++;
+     
+          }
+        
+         else if(num===2){
+            
+            slidebar.style.width="18%";
+            for(let i =0;i<text.length;i++){
+          text[i].style.color="white";
+          text[i].style.paddingBottom="6px"
+      }
+            num=1;
+            
+     
+        }
+      }
+     var home=document.getElementById("home")
+     console.log(home)
+     home.onclick=()=>{
+        vidbox.setAttribute("id","videos")
+        homepage()
+        
+     }
+    </script>
+     
+    
